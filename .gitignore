@@ -1,0 +1,14 @@
+# Real Chrome data and backups
+Local State
+Local State.*.bak
+*.metadata.json
+ChromeLocalStateBackups/
+
+# Logs and transient files
+*.log
+*.tmp
+*.pending-*
+
+# PowerShell editor and test artifacts
+*.user
+TestResults/
