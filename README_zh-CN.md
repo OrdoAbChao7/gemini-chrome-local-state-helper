@@ -4,6 +4,20 @@
 </div>
 <br>
 
+
+
+<!-- portfolio-authenticity:start -->
+## 项目状态
+
+**当前阶段：**范围受限的离线恢复工具。
+
+**为什么做这个项目：**我写这个工具是为了检查并可逆地修改少量 Chrome 本地字段，同时保留完整备份并避免使用远程脚本。
+
+**适用边界：**它不能授予 Gemini 访问权限、改变账号资格、绕过企业策略或覆盖分阶段发布。它只适用于个人 Windows 配置文件，并应在检查官方 Chrome 和策略前置条件后使用。
+
+关于仍需补充的验证证据和维护约定，请参阅 [PROJECT_STATUS.md](./PROJECT_STATUS.md)。
+<!-- portfolio-authenticity:end -->
+
 > 一个可离线运行的 PowerShell 小工具，用于在 Windows 上对与 Gemini/Glic 相关的一小组 Chrome Local State 值进行备份、检查、应用与恢复。
 >
 > 本项目与 Google 无关。它不会赋予你 Gemini 访问权限、改变 Google 账号资格、绕过组织策略，或保证功能可用性。Chrome 中的 Gemini 仍受账号、地区、语言、Chrome 版本、企业策略以及服务端逐步推出等条件限制。[1]

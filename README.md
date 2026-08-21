@@ -4,6 +4,20 @@
 </div>
 <br>
 
+
+
+<!-- portfolio-authenticity:start -->
+## Project status
+
+**Stage:** Narrow, offline recovery helper.
+
+**Why I built it:** I built this to inspect and reversibly edit a small set of local Chrome values while keeping a full backup and avoiding remote scripts.
+
+**Boundary:** It cannot grant Gemini access, change account eligibility, bypass enterprise policy, or override staged rollout. It is for a personal Windows profile only and should be used after checking official Chrome and policy prerequisites.
+
+See [PROJECT_STATUS.md](./PROJECT_STATUS.md) for the evidence still needed and the maintenance rule.
+<!-- portfolio-authenticity:end -->
+
 > A small, offline PowerShell helper for backing up, inspecting, applying, and restoring a narrow set of Gemini/Glic-related Chrome Local State values on Windows.
 >
 > This project is not affiliated with Google. It does not grant Gemini access, change Google account eligibility, bypass organization policies, or guarantee feature availability. Gemini in Chrome remains subject to Google account, region, language, Chrome version, enterprise policy, and server-side rollout requirements.[1]
