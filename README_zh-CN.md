@@ -18,19 +18,9 @@
 关于仍需补充的验证证据和维护约定，请参阅 [PROJECT_STATUS.md](./PROJECT_STATUS.md)。
 <!-- portfolio-authenticity:end -->
 
-> 一个可离线运行的 PowerShell 小工具，用于在 Windows 上对与 Gemini/Glic 相关的一小组 Chrome Local State 值进行备份、检查、应用与恢复。
->
-> 本项目与 Google 无关。它不会赋予你 Gemini 访问权限、改变 Google 账号资格、绕过组织策略，或保证功能可用性。Chrome 中的 Gemini 仍受账号、地区、语言、Chrome 版本、企业策略以及服务端逐步推出等条件限制。[1]
+一个离线运行的 PowerShell 脚本，用于在 Windows 上对少量与 Gemini/Glic 相关的 Chrome Local State JSON 键进行备份、检查和编辑。
 
-## 这是什么
-
-这是一个可离线运行的 PowerShell 项目，用于自动化一套可恢复的 Chrome `Local State` 配置操作。它要求在 Chrome 关闭时运行，会创建完整文件备份，仅写入白名单键，验证 JSON，并提供可测试的恢复路径。
-
-- 只处理以下最小白名单键：`glic.launcher_enabled`、已存在 Profile 的 `is_glic_eligible`、以及可选的 `variations_country` / `variations_safe_seed_session_consistency_country` / `permanent_country`。
-- 不会下载远程脚本，不会修改注册表或 Chrome Policy，也不会触碰浏览器 Profile、书签、Cookie、历史记录、扩展或系统设置。
-- 不会赋予或解锁 Chrome 中的 Gemini，也不会替代账号/地区/策略/灰度发布等前置条件。[1]
-
-Google 的官方排障页建议首先检查 Chrome 版本、`chrome://policy` 中的 Gemini 策略、支持的地区/语言以及逐步推出状态。[1] 本项目不能替代这些条件。尤其是受学校或企业管理的设备，不应绕过组织策略。
+> **注意：** 本项目与 Google 无关。它不会赋予你 Gemini 访问权限、改变账号资格、绕过组织策略，或保证功能可用性。它只在 Chrome 关闭时编辑特定的 JSON 键（`glic.launcher_enabled`、`is_glic_eligible` 以及地区相关字段）。
 
 ## 安全机制
 

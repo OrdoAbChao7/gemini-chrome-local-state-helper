@@ -18,19 +18,9 @@
 See [PROJECT_STATUS.md](./PROJECT_STATUS.md) for the evidence still needed and the maintenance rule.
 <!-- portfolio-authenticity:end -->
 
-> A small, offline PowerShell helper for backing up, inspecting, applying, and restoring a narrow set of Gemini/Glic-related Chrome Local State values on Windows.
->
-> This project is not affiliated with Google. It does not grant Gemini access, change Google account eligibility, bypass organization policies, or guarantee feature availability. Gemini in Chrome remains subject to Google account, region, language, Chrome version, enterprise policy, and server-side rollout requirements.[1]
+An offline PowerShell script for backing up, inspecting, and editing a narrow set of Gemini/Glic-related Chrome Local State JSON keys on Windows.
 
-## What it does
-
-This offline PowerShell project performs a narrow, reversible Local State operation for Gemini/Glic-related keys. It requires Chrome to be closed, creates a full-file backup, writes only allowlisted keys, validates the JSON, and provides a tested restore path.
-
-- Only handles the minimal allowlist of keys: `glic.launcher_enabled`, `is_glic_eligible` for existing profiles, and optionally `variations_country` / `variations_safe_seed_session_consistency_country` / `permanent_country`.
-- Does not download remote scripts, modify the registry or Chrome policies, or touch browser profiles, bookmarks, cookies, history, extensions, or system settings.
-- Does not grant access to Gemini in Chrome or override account, regional, policy, or rollout requirements.[1]
-
-Google’s official troubleshooting guidance recommends checking your Chrome version, Gemini-related entries in `chrome://policy`, supported region/language, and staged rollout status first.[1] This project cannot replace those prerequisites. Managed school or enterprise devices should not attempt to circumvent organizational policy.
+> **Note:** This is not affiliated with Google. It does not grant Gemini access, change account eligibility, bypass organization policies, or guarantee feature availability. It only edits specific JSON keys (`glic.launcher_enabled`, `is_glic_eligible`, and country variations) while Chrome is closed.
 
 ## Safety mechanisms
 
